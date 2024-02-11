@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Два блока в HTML</title>
+    <style>
+        /* Стилизация блоков */
+        .block {
+            width: 75%;
+            height: 50%;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 38px;
+        }
+        input[type="text"]
+        {
+            width: 200px;
+            height: 50px;
+            border: 2px solid #ade6b2;
+            border-radius: 3px;
+            background-color: honeydew;
+            color: coral;
+            text-overflow: ellipsis;
+        }
+        input[type="text"]::placeholder{
+            color: darkcyan;
+            font-family: "Avenir Next Condensed";
+            font-size: 38px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+
+<!-- Первый блок -->
+<div class="block">
+    <h2>Instagram</h2>
+    <br>
+    <input type="text" name="username" id="name" placeholder="Номер телефону, імя" required>
+    <br>
+    <label for="password">Введіть свій пароль </label>
+    <br>
+    <input type="password" name="password" id="password" placeholder="qwerty123" required>
+    <br>
+    <button>Увійти</button>
+    <p>Содержимое первого блока...</p>
+</div>
+
+<!-- Второй блок -->
+<div class="block">
+    <h2>Блок 2</h2>
+    <p>Содержимое второго блока...</p>
+</div>
+
+</body>
+</html>
